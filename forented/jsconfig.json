@@ -1,0 +1,9 @@
+server: {
+  port: 5173,
+  proxy: {
+    "/api": {
+      target: "http://127.0.0.1:5000",   // 8000 se 5000 kar diya
+      changeOrigin: true,
+    },
+  },
+},
